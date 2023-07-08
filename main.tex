@@ -1,0 +1,93 @@
+\newcommand{\subject}[1]{\renewcommand{\subject}{#1}}
+\newcommand{\keywords}[1]{\renewcommand{\keywords}{#1}}
+
+\documentclass[a4paper]{article}
+
+\date{\today}
+\subject{LaTeX}
+\keywords{PDF, DVI.}
+
+\usepackage{docstyle}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage{authblk}
+\usepackage{caption}
+\usepackage[version=4]{mhchem}
+
+\title{Spin Casting to Confirm the Molecular Weight of a Polystyrene Sample}
+\author{Samuel Coopersmith}
+\affil{Casa Grande High School}
+\author{Brinley Dai}
+\affil{}
+\author{Sahana Dhama}
+\affil{The Wheatley School}
+\author{Peter Elmer}
+\affil{High School for Math, Science and Engineering}
+\author{Dylan Fei}
+\affil{Jericho Senior High School}
+\author{Hannah Feng}
+\affil{Torrey Pines High School}
+\author{Anita Gaenko}
+\affil{Huron High School}
+\author{Jerry Gao}
+\affil{Beijing No.~80 High School}
+\author{Jacqueline Han}
+\affil{}
+\author{Anna Heimowitz}
+\affil{Stella K. Abraham High School}
+\author{Sharis Hsu}
+\affil{Valley Christian High School}
+\author{Ellen Hu}
+\affil{C.~Leon King High School}
+\newenvironment{Figure}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+
+\newcommand{\sectionattrib}[1]{\vspace{-1cm}\noindent\small\textbf{#1}}
+
+\begin{document}
+	\maketitle
+    \begin{abstract}
+        \lipsum[1-2]
+    \end{abstract}
+    \begin{multicols}{2}
+        \ce{LiPH6}
+        \section{Section Name}
+        \sectionattrib{Jerry Gao}
+        \begin{Figure}
+            \centering
+            \includegraphics[scale=0.5]{example-image}
+            \captionof{figure}{Caption of the figure.}
+        \end{Figure}
+        \lipsum[3-5]
+        \section{Section Name}
+        \lipsum[3-5]
+        \section{Section Name}
+        \begin{Figure}
+            \centering
+            \includegraphics[scale=0.5]{example-image}
+            \captionof{figure}{Caption of the figure.}
+        \end{Figure}
+        \lipsum[3-5]
+        \begin{Figure}
+            \centering
+            \includegraphics[scale=0.5]{example-image}
+            \captionof{figure}{Caption of the figure.}
+        \end{Figure}
+        \section{Section Name}
+        \lipsum[3-5]
+        \section{Section Name}
+        \lipsum[3-5]
+        \begin{Figure}
+            \centering
+            \includegraphics[scale=0.5]{example-image}
+            \captionof{figure}{Caption of the figure.}
+        \end{Figure}
+        \lipsum[3-5]
+        \section{Section Name}
+        \lipsum[3-5]
+        \section{Section Name}
+        \lipsum[3-5]                            
+    \end{multicols}
+    
+\end{document}
