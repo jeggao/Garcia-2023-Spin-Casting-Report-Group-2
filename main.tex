@@ -1,7 +1,7 @@
 \newcommand{\subject}[1]{\renewcommand{\subject}{#1}}
 \newcommand{\keywords}[1]{\renewcommand{\keywords}{#1}}
 
-\documentclass{article}
+\documentclass[twocolumn]{article}
 
 \date{\today}
 \subject{Chemistry}
@@ -61,16 +61,6 @@
 
 \date{}
 
-\newenvironment{Figure}
-  {\par\medskip\noindent\minipage{\linewidth}}
-  {\endminipage\par\medskip}
-
-\newenvironment{Table}
-  {\par\medskip\noindent\minipage{\linewidth}}
-  {\endminipage\par\medskip}
-
-\newcommand{\sectionattrib}[1]{\vspace{-0.3cm}\noindent\small\textbf{#1}}
-
 \begin{document}
 	\maketitle
     \begin{abstract}
@@ -81,7 +71,6 @@
         The findings support previous experiments that use spin-casting to infer the molecular weight of polystyrene samples.
     \end{abstract}
 
-    \begin{multicols}{2}
         \section{Introduction}
         Polystyrene (PS), an aromatic polymer, is formed by the polymerization of styrene monomers\autocite{WOS:Weith}. Polystyrene finds extensive application in various sectors, most prominently in the food industry\autocite{WOS:Paraskevopoulou}. There, it is used to package food items in the form of lids, and converted into foam to make cups, containers, trays, etc. This is because it is low in cost, light weight (as foam), easy to process, and hydrophobic\autocite{WOS:He}. In research, polystyrene is utilized to produce instruments like test tubes and tissue culture trays. Evaluating the molecular weight of polystyrene can provide valuable insights into its mechanical properties, such as polymer chain length\autocite{WOS:Smirnova}. These properties encompass viscosity\autocite{WOS:Tang}, chemical resistance\autocite{WOS:Feng}, and facilitate efficient utilization of the polymer\autocite{WOS:Ismail, WOS:Zizkova, WOS:Siswosukarto, WOS:Motta}.
 
@@ -93,18 +82,18 @@
             \subsection{Silicon Cleaving}
             Each person in our group cleaved two square silicon wafers, each of length 1 cm. and with a Miller index equalling 100, totalling 24 available Si(100) wafers. These wafers would serve as the substrates to the six polystyrene solutions, allowing us to use four wafers per concentration. To begin, we placed a clean, undamaged silicon wafer, which was already cut to a width of 1 cm., with its dull side facing up on a dry paper towel. Using a ruler, we pre-cut two holes that measured 1 cm. between them, thereby facilitating the cutting process. We then aligned the undamaged silicon wafer with the pre-cut 1 cm. measurement, and from there, we used a diamond-tip cutter to carefully scrape vertically across the desired point, applying the most pressure at the edge (bottom- and top-most) parts of the wafer, while holding the whole piece of silicon in place using a tweezer. These cut silicon wafers were then placed in petri dishes and sealed with Parafilm grafting tape.
 
-            \begin{Figure}
+            \begin{figure}
                 \centering
                 \includegraphics[width=0.8\columnwidth]{img/silicon.png}
                 \captionof{figure}{Possible slicing directions for (100) and (111) indices of silicon.}
                 \label{fig:silicon}
-            \end{Figure}
+            \end{figure}
 
             Two options of silicon configurations on the Miller index were available: Si(100) and Si(111). These orientations differ in that the Si(100) configuration will produce crystals that cleave naturally into cubic structures whereas the Si(111) configuration will produce crystals that cleave naturally into triangular structures 45° (Figure \ref{fig:silicon}). Thus, because our experiment requires square wafers, we used Si(100) as opposed to Si(111).
 
             \subsection{Polystyrene Solutions}
 
-                \begin{Table}
+                \begin{table}
                     \centering
                     \begin{tabular}{@{}ccc@{}}
                         \toprule
@@ -116,7 +105,7 @@
                         35.0                           & 98.8                  & 2.83                \\
                         37.5                           & 101.6                 & 2.71                \\ \bottomrule
                     \end{tabular}
-                \end{Table}
+                \end{table}
 
                 Six concentrations of polystyrene in toluene were prepared, ranging from 25 mg/mL to 37.5 mg/mL (incremented by 2.5 mg/mL). We chose to use 99.9\% toluene as the solvent for the polystyrene pellets (Mw ~ 280,000 g/mol) due to its ability to easily dissolve organic solutes. We weighed six different masses of polystyrene 280K (error of ±0.01 mg) and, in turn, measured six different volumes of toluene (error of ±0.1 mL).
 
@@ -146,7 +135,7 @@
         \section{Results and Discussion}
             \subsection{Ellipsometry}
 
-                \begin{Table}
+                \begin{table}
                     \centering
                         \begin{tabular}{@{}cc@{}}
                             \toprule
@@ -158,7 +147,7 @@
                             35.0                  & 3568          \\
                             37.5                  & 101.6         \\ \bottomrule
                         \end{tabular}
-                \end{Table}
+                \end{table}
 
                 The ellipsometer was used to determine the thicknesses of the various polystyrene solutions. For every sample, the ellipsometer yielded four measurements, wherein we would have to determine the most reasonable value. Our experiment demonstrated two issues with the ellipsometer: (1) our concentrations were too high, meaning that without letting the solutions dissolve for a long period of time (2-3 days instead of 1 day), there would be a loss of uniformity in the sample, and (2) the solutions were not filtered using some other method before applying them for ellipsometry, hence, again, a loss of uniformity. Therefore, the resulting thicknesses were averages of the changes in polarization.
 
@@ -169,7 +158,7 @@
             
             \subsection{Absorbance}
 
-                \begin{Table}
+                \begin{table}
                     \centering
                     \begin{tabular}{@{}cc@{}}
                         \toprule
@@ -181,18 +170,14 @@
                         32.5                              & 0.071                \\
                         37.5                              & 0.129                \\ \bottomrule
                     \end{tabular}
-                \end{Table}
+                \end{table}
 
-                \end{multicols}
-
-                \begin{Figure}
+                \begin{figure}
                     \centering
                     \includegraphics[width=0.8\columnwidth]{img/uvvis.png}
                     \captionof{figure}{Caption TBD.}
                     \label{fig:uv-vis}
-                \end{Figure}
-
-                \begin{multicols}{2}
+                \end{figure}
                 To measure absorbance at 290 nm, Beer Lambert Law of A = lc is utilized. This equation states that absorbance and concentration are directly proportional to each other. Measuring absorbance ensures that all solutions made for spincasting are at the proper concentration. However, upon inspecting the levels of absorbance at 290 nm, there is no distinct pattern of absorbance increase as concentration increases, which is expected. Consequently, these unpredictable results indicate significant issues with the concentration of the solutions. This can most likely be attributed to the high concentration of polystyrene utilized in the solutions. The large amounts of  polystyrene were not properly dissolved into the solution, leading to inconsistencies in absorbance. 
 
             \subsection{Differencial Scanning Calorimeter}
@@ -242,5 +227,4 @@
         \section{Conclusions}
         \section{Acknowledgements}
         \printbibliography
-    \end{multicols}
 \end{document}
