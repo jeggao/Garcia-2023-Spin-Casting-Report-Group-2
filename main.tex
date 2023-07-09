@@ -1,26 +1,28 @@
 \newcommand{\subject}[1]{\renewcommand{\subject}{#1}}
 \newcommand{\keywords}[1]{\renewcommand{\keywords}{#1}}
 
-\documentclass[a4paper]{article}
+\documentclass{article}
 
 \date{\today}
-\subject{LaTeX}
-\keywords{PDF, DVI.}
+\subject{Chemistry}
+\keywords{Spin Casting, Polymers, Polystyrene, Molecular Weight.}
 
 \usepackage{docstyle}
 \usepackage{multicol}
-\usepackage{lipsum}
-\usepackage{authblk}
+\setlength{\columnsep}{1cm}
+\usepackage[affil-it]{authblk}
 \usepackage{caption}
 \usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+\usepackage{xurl}
 
-\title{Spin Casting to Confirm the Molecular Weight $M_w$ of a Polystyrene Sample}
+\title{\bfseries Spin Casting to Confirm the Molecular Weight of a Polystyrene Sample}
 
 \author{Samuel Coopersmith}
 \affil{Casa Grande High School}
 
 \author{Brinley Dai}
-\affil{}
+\affil{The Experimental High School Attached to Beijing Normal University}
 
 \author{Sahana Dhama}
 \affil{The Wheatley School}
@@ -41,7 +43,7 @@
 \affil{Beijing No.~80 High School}
 
 \author{Jacqueline Han}
-\affil{}
+\affil{Great Neck South High School}
 
 \author{Anna Heimowitz}
 \affil{Stella K. Abraham High School}
@@ -63,50 +65,32 @@
 \begin{document}
 	\maketitle
     \begin{abstract}
-        Molecular weight is crucial to characterizing and understanding polymers. Using the molecular weight, we can approximate the length of the polymer chains in a polystyrene (PS) sample, thereby allowing us to predict properties of the polymer. In this experiment, a method of measuring molecular weight involving spin casting and ellipsometry to confirm a known pure PS sample (Mw=280K) was applied and tested. Employing fourier-transform infrared spectroscopy (FTIR), differential scanning calorimetry (DSC), UV-visible spectrometry, and goniometry, the sample was confirmed to be PS. FTIR analysis confirmed that the sample was pure PS, while DSC determined the glass transition temperature to be 107.41°C, in agreement with reported PS values. 
+        Molecular weight is crucial to characterizing and understanding polymers. Using the molecular weight, we can approximate the length of the polymer chains in a polystyrene (PS) sample, thereby allowing us to predict properties of the polymer. In this experiment, a method of measuring molecular weight involving spin casting and ellipsometry to confirm a known pure PS sample ($M_w = 280K$) was applied and tested. Employing fourier-transform infrared spectroscopy (FTIR), differential scanning calorimetry (DSC), UV-visible spectrometry, and goniometry, the sample was confirmed to be PS. FTIR analysis confirmed that the sample was pure PS, while DSC determined the glass transition temperature to be \qty{107.41}{\degreeCelsius}, in agreement with reported PS values. 
         
-        The sample was then dissolved in various concentrations ranging from 25 mg/mL to 37.5 mg/mL and spun cast on silicon wafer squares. The resulting PS-coated silicon wafers were measured via ellipsometry to determine thickness. Contact angles were determined via a goniometer for both PS-coated (Mean: 82.52°) and non-coated (15.12°) wafers. PS-coated wafers were then exposed to UV/Ozone, and the contact angles were measured, corroborating industrial processes of creating hydrophilic PS materials. 
+        The sample was then dissolved in various concentrations ranging from \qty{25}{\milli\gram\per\milli\liter} to \qty{37.5}{\milli\gram\per\milli\liter} and spun cast on silicon wafer squares. The resulting PS-coated silicon wafers were measured via ellipsometry to determine thickness. Contact angles were determined via a goniometer for both PS-coated (Mean: \qty{82.52}{\degree}) and non-coated (\qty{15.12}{\degree}) wafers. PS-coated wafers were then exposed to UV/Ozone, and the contact angles were measured, corroborating industrial processes of creating hydrophilic PS materials. 
         
         The findings support previous experiments that use spin-casting to infer the molecular weight of polystyrene samples.
     \end{abstract}
-    \newpage
+
     \begin{multicols}{2}
-        \section{Section Name}
-        \sectionattrib{Jerry Gao}
+        \section{Introduction}
         \begin{Figure}
             \centering
             \includegraphics[scale=0.5]{example-image}
             \captionof{figure}{Caption of the figure.}
         \end{Figure}
-        \lipsum[3-5]
+        Polystyrene, an aromatic polymer, is formed by the polymerization of styrene monomers (\url{https://doi.org/10.1021/ie50370a006}). Polystyrene finds extensive application in various sectors, including the food industry (\url{https://doi.org/10.1002/mabi.200400043}). There, it is converted into foam to package food items. In research, polystyrene is utilized to produce instruments like test tubes and tissue culture trays. Evaluating the molecular weight of polystyrene can provide valuable insights into its mechanical properties, such as polymer chain length (\url{https://doi.org/10.1007/s11172-013-0325-5}). These properties encompass viscosity, chemical resistance (), and facilitate efficient utilization of the polymer ().
+
+        One approach to determining the molecular weight involves spin-casting polystyrene solutions with different concentrations onto silicon (Si) wafers (). This technique yields thin layers of polystyrene characterized by high material purity, weight, and density (). To validate the accuracy of the spin casting method, the molecular weight of a commercially prevalent polystyrene 280K sample was determined in this experiment.
+
+        The experiment aimed to accomplish five primary objectives: understanding the crystal structures of Si wafers and processing Si wafer surfaces, spin-casting thin polymer films, measuring the thickness of these films, identifying various polystyrene characteristics, and confirming the molecular weight of a known polystyrene sample. To achieve these objectives, a range of equipment and methodologies were employed, including the creation of a solution containing polystyrene and toluene, cleaving silicon wafers, utilizing an optical microscope, UV-Vis spectrophotometer, differential scanning calorimetry (DSC), compression molding, Fourier-transform infrared (FTIR) spectroscopy, a spin caster, contact angle calculation, and an ellipsometer. These equipment and methodologies were categorized into three main sections: preparation, confirmation of polystyrene identity, and determination of molecular weight.
+
         \section{Section Name}
-        \lipsum[3-5]
         \section{Section Name}
-        \begin{Figure}
-            \centering
-            \includegraphics[scale=0.5]{example-image}
-            \captionof{figure}{Caption of the figure.}
-        \end{Figure}
-        \lipsum[3-5]
-        \begin{Figure}
-            \centering
-            \includegraphics[scale=0.5]{example-image}
-            \captionof{figure}{Caption of the figure.}
-        \end{Figure}
         \section{Section Name}
-        \lipsum[3-5]
         \section{Section Name}
-        \lipsum[3-5]
-        \begin{Figure}
-            \centering
-            \includegraphics[scale=0.5]{example-image}
-            \captionof{figure}{Caption of the figure.}
-        \end{Figure}
-        \lipsum[3-5]
         \section{Section Name}
-        \lipsum[3-5]
         \section{Section Name}
-        \lipsum[3-5]                            
     \end{multicols}
     
 \end{document}
