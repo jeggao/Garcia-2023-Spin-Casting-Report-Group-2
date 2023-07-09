@@ -17,6 +17,7 @@
 \usepackage{xurl}
 \usepackage{amsmath}
 \usepackage[style=chem-acs]{biblatex}
+\usepackage{booktabs}
 
 \bibliography{savedrecs}
 
@@ -64,6 +65,10 @@
   {\par\medskip\noindent\minipage{\linewidth}}
   {\endminipage\par\medskip}
 
+\newenvironment{Table}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+
 \newcommand{\sectionattrib}[1]{\vspace{-0.3cm}\noindent\small\textbf{#1}}
 
 \begin{document}
@@ -98,6 +103,21 @@
             Two options of silicon configurations on the Miller index were available: Si(100) and Si(111). These orientations differ in that the Si(100) configuration will produce crystals that cleave naturally into cubic structures whereas the Si(111) configuration will produce crystals that cleave naturally into triangular structures 45° (Figure \ref{fig:silicon}). Thus, because our experiment requires square wafers, we used Si(100) as opposed to Si(111).
 
             \subsection{Polystyrene Solutions}
+
+                \begin{Table}
+                    \centering
+                    \begin{tabular}{ccc}
+                        \toprule
+                        Conc. (mg/mL) & PS mass (mg) & Toluene vol. (mL) \\\midrule
+                        25.0                   & 69.9         & 2.80              \\
+                        27.5                   & 72.9         & 2.62              \\
+                        30.0                   & 87.7         & 2.92              \\
+                        32.5                   & 95.1         & 2.93              \\
+                        35.0                   & 98.8         & 2.83              \\
+                        37.5                   & 101.6        & 2.71              \\\bottomrule
+                    \end{tabular}
+                \end{Table}
+
                 Six concentrations of polystyrene in toluene were prepared, ranging from 25 mg/mL to 37.5 mg/mL (incremented by 2.5 mg/mL). We chose to use 99.9\% toluene as the solvent for the polystyrene pellets (Mw ~ 280,000 g/mol) due to its ability to easily dissolve organic solutes. We weighed six different masses of polystyrene 280K (error of ±0.01 mg) and, in turn, measured six different volumes of toluene (error of ±0.1 mL).
 
             \subsection{Spin Casting}
