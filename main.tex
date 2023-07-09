@@ -152,6 +152,40 @@
                         \label{tab:ellips}
                 \end{table}
 
+                \begin{figure}
+                    \centering
+                        \begin{tikzpicture}
+                            \begin{axis}[ 
+                            xlabel={PS Solution Concentration (\unit{\milli\gram\per\milli\liter})},
+                            ylabel={Thickness (\unit{\angstrom})}
+                            ] 
+                            
+                            \addplot [
+                                color = black,
+                                fill = black,
+                                mark = *, % A filled circle
+                                only marks
+                            ] coordinates {
+                                ( 25, 2040 )
+                                ( 27.5, 2402 )
+                                ( 30, 2719 )
+                                ( 32.5, 3036 )
+                                ( 35, 3658 )
+                                };
+                            \addplot[
+                                color = black,
+                                mark = none
+                                ] coordinates {
+                                ( 22.5, 1646 )
+                                ( 37.5 , 3860 )
+                                }
+                            node [left] {$y = -1675 + 147.6x$};
+                            \end{axis}
+                        \end{tikzpicture}
+                    \caption{Caption TBD.}
+                    \label{fig:ellips}
+                \end{figure}
+
                 The ellipsometer was used to determine the thicknesses of the various polystyrene solutions. For every sample, the ellipsometer yielded four measurements, wherein we would have to determine the most reasonable value. Our experiment demonstrated two issues with the ellipsometer: (1) our concentrations were too high, meaning that without letting the solutions dissolve for a long period of time (2-3 days instead of 1 day), there would be a loss of uniformity in the sample, and (2) the solutions were not filtered using some other method before applying them for ellipsometry, hence, again, a loss of uniformity. Therefore, the resulting thicknesses were averages of the changes in polarization.
 
                 In our investigation using the linear regression model, we have determined that the line of best fit can be expressed asy=147.6x-1675y. By applying this equation to extrapolate the results to a thickness of 2000 Å, we calculated the critical concentration of polystyrene in toluene to be 24.90 mg/mL. Finally, we use the equation listed below where x stands for the critical concentration, and y stands for molecular weight.
