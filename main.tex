@@ -18,6 +18,7 @@
 \usepackage[style=chem-acs]{biblatex}
 \usepackage{booktabs}
 \usepackage{pgfplots}
+\usepackage{float}
 
 \bibliography{savedrecs}
 
@@ -214,13 +215,18 @@
                 To measure absorbance at 290 nm, Beer Lambert Law of A = lc is utilized. This equation states that absorbance and concentration are directly proportional to each other. Measuring absorbance ensures that all solutions made for spincasting are at the proper concentration. However, upon inspecting the levels of absorbance at 290 nm, there is no distinct pattern of absorbance increase as concentration increases, which is expected. Consequently, these unpredictable results indicate significant issues with the concentration of the solutions. This can most likely be attributed to the high concentration of polystyrene utilized in the solutions. The large amounts of  polystyrene were not properly dissolved into the solution, leading to inconsistencies in absorbance. 
 
             \subsection{Differencial Scanning Calorimeter}
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=\columnwidth]{img/dsc.pdf}
+                    \caption{Caption TBD.}\label{fig:dsc}
+                \end{figure}
                 Through the utilization of Differential Scanning Calorimetry (DSC) analysis, the glass transition temperature (Tg) of the polystyrene specimen was precisely ascertained to be 107.41 °C. The glass transition phenomenon characterizes the temperature range at which the polymer undergoes a transition from a rigid state to a more flexible state, imparting significant insights into the nature of the molecular interactions within the material. This transition is intrinsically linked to the intermolecular forces governing the polymer molecules\autocite{WOS:COUCHMAN}. The determination of the Tg assumes paramount importance in confirming the molecular weight of the polystyrene sample, thereby contributing to a comprehensive understanding of its structural properties and behavior.
             \subsection{FTIR}
-                \begin{figure*}
+                \begin{figure}[H]
                     \centering
-                    \includegraphics[width=0.8\textwidth]{img/ftir-comp.png}
+                    \includegraphics[width=0.8\columnwidth]{img/ftir-comp.png}
                     \caption{Caption TBD.}\label{fig:ftir-comp}
-                \end{figure*}
+                \end{figure}
                 Using FTIR spectroscopy, a graph of wavenumber vs absorbance  was generated. Because distinct  molecular bonds will absorb at different intensities and wavenumbers, , the graph that FTIR generates serves as a fingerprint for sample identity. Figure \# demonstrates our sample closely resembles the accepted FTIR spectrum for PS, with some negative absorbance noise that indicates discrepancies when subtracting out the base spectrum.
             \subsection{UV-Vis Spectroscopy}
             \subsection{Calculations}
