@@ -155,12 +155,13 @@
                         \begin{tikzpicture}
                             \begin{axis}[ 
                             xlabel={PS Solution Concentration (\unit{\milli\gram\per\milli\liter})},
-                            ylabel={Thickness (\unit{\angstrom})}
+                            ylabel={Thickness (\unit{\angstrom})},
+                            legend pos=south east,
                             ] 
                             
                             \addplot [
-                                color = black,
-                                fill = black,
+                                color = blue,
+                                fill = blue,
                                 mark = *, % A filled circle
                                 only marks
                             ] coordinates {
@@ -170,6 +171,7 @@
                                 ( 32.5, 3036 )
                                 ( 35, 3658 )
                                 };
+                                \addlegendentry{Experiment Data}
                             \addplot[
                                 color = black,
                                 mark = none
@@ -177,7 +179,8 @@
                                 ( 22.5, 1646 )
                                 ( 37.5 , 3860 )
                                 }
-                            node [left] {$y = -1675 + 147.6x$};
+                                node [left] {$R^2 = 0.9888$};
+                                \addlegendentry{$y = 147.6x -1675$}
                             \end{axis}
                         \end{tikzpicture}
                     \caption{Caption TBD.}\label{fig:ellips}
