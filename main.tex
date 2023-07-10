@@ -371,6 +371,7 @@
                     However, due to practical constraints, ellipsometry testing for the wafer coated with \qty{37.5}{\milli\gram\per\milli\liter} solution was not performed. Thus, the average $dC$ used for molecular weight calculations will be \qty{\pm 1.063}{\milli\gram\per\milli\liter}.
 
                 \subsubsection{Molecular Weight}
+                    Molecular weight error propagation was done using the known error for concentration. Using the previously-cited equation for molecular weight:
                     \begin{align}
                         M_\text{w} &= y = \qty{1.726e5}{\atomicmassunit} \nonumber\\
                         C &= \qty{24.9}{\milli\gram} \nonumber\\
@@ -386,8 +387,10 @@
                     \end{align}
                     \begin{align}
                         \text{Error} &= \frac{|dM_\text{w}|}{M_\text{w}} \times 100\%\\
-                        \text{Error} &= 21.54\% \nonumber
+                        \text{Error} &= 21.54\% \nonumber \\
+                        \text{Error} &= \qty{3.718e4}{\atomicmassunit}
                     \end{align}
+                    A $20.50\%$ error is relatively large, and may be reduced with more tests involving the ellipsometer as well as using more accurate instruments to prepare the solution.
 
         \section{Conclusion}
             This experiment was designed to evaluate the viability of determining the molecular weight of an unknown sample of PS by measuring a known PS sample ($M_\text{w} = 280K$) using spin-casting and ellipsometry. FTIR spectroscopy performed on the PS sample closely resembles standard PS FTIR data. DSC was performed and the experiment glass-transition temperature of \qty{107.41}{\degreeCelsius} was obtained, which closely matches current literature. Goniometry analysis of spun-cast films of the sample, which demonstrated low wettability, agreeing with knowledge that PS films are hydrophobic.
