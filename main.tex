@@ -7,7 +7,34 @@
 \subject{Chemistry}
 \keywords{Spin Casting, Polymers, Polystyrene, Molecular Weight.}
 
-\usepackage{docstyle}
+% Geometry
+\usepackage[margin=0.7in]{geometry}
+
+% Typography Packages
+\usepackage{microtype}
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+
+% Image Packages
+\usepackage{graphicx}
+
+% Hyperref
+\usepackage[pdfusetitle]{hyperref}
+\hypersetup{%
+	colorlinks,
+	linktoc=all,
+	allcolors=blue,
+	breaklinks=true,
+	pdfpagemode=UseOutlines
+}
+\hypersetup{%
+	pdfsubject={\subject},
+	pdfkeywords={\keywords},
+}
+
+
 \setlength{\columnsep}{1cm}
 \usepackage[affil-it]{authblk}
 \usepackage{caption}
