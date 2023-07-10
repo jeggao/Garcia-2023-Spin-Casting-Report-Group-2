@@ -5,7 +5,7 @@ import argparse
 TEX_NAME = "main.tex"
 AUX_DIR = "./tmp"
 OUT_DIR = "./"
-OUT_NAME = "main"
+OUT_NAME = "Group 2 Lab Report"
 
 LATEX = "pdflatex"
 
