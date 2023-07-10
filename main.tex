@@ -186,6 +186,57 @@
                     \caption{Caption TBD.}\label{fig:ellips}
                 \end{figure}
 
+                \begin{figure}
+                    \centering
+                        \begin{tikzpicture}
+                            \begin{axis}[ 
+                            xlabel={PS Solution Concentration (\unit{\milli\gram\per\milli\liter})},
+                            ylabel={Thickness (\unit{\angstrom})},
+                            legend pos=south east,
+                            ] 
+                            
+                            \addplot [
+                                color = black,
+                                fill = black,
+                                mark = *, % A filled circle
+                                only marks
+                            ] coordinates {
+                                ( 10, 701 )
+                                ( 12.5, 828 )
+                                ( 15, 1103 )
+                                (17.5, 1204)
+                                (20, 1568)
+                                (22.5, 1903)
+                                ( 25, 2040 )
+                                ( 27.5, 2402 )
+                                ( 30, 2719 )
+                                ( 32.5, 3036 )
+                                ( 35, 3658 )
+                                };
+                                \addlegendentry{Experiment Data}
+                            \addplot[
+                                color = blue,
+                                mark = none
+                                ] coordinates {
+                                ( 22.5, 1646 )
+                                ( 37.5 , 3860 )
+                                }
+                                node [left] {Group 2};
+                                \addlegendentry{$y = 147.6x -1675$}
+                            \addplot[
+                                color = red,
+                                mark = none
+                                ] coordinates {
+                                ( 10, 626.19 )
+                                ( 30 , 2538.65 )
+                                }
+                                node [right] {Group 1};
+                                \addlegendentry{$y = 95.623x -330.04$}
+                            \end{axis}
+                        \end{tikzpicture}
+                    \caption{Caption TBD.}\label{fig:ellips2}
+                \end{figure}
+
                 The ellipsometer was used to determine the thicknesses of the various polystyrene solutions. For every sample, the ellipsometer yielded four measurements, wherein we would have to determine the most reasonable value. Our experiment demonstrated two issues with the ellipsometer: (1) our concentrations were too high, meaning that without letting the solutions dissolve for a long period of time (2-3 days instead of 1 day), there would be a loss of uniformity in the sample, and (2) the solutions were not filtered using some other method before applying them for ellipsometry, hence, again, a loss of uniformity. Therefore, the resulting thicknesses were averages of the changes in polarization.
 
                 In our investigation using the linear regression model, we have determined that the line of best fit can be expressed as $y = 147.6x - 1675$. By applying this equation to extrapolate the results to a thickness of 2000 \unit{\angstrom}, we calculated the critical concentration of polystyrene in toluene to be \qty{24.9}{\milli\gram\per\milli\liter}. Finally, we use the equation listed below where $x$ stands for the critical concentration, and $y$ stands for molecular weight.
